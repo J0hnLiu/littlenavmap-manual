@@ -1,6 +1,6 @@
-## First Start {#first-start}
+## 首次启动 {#first-start}
 
-_Little Navmap_ will copy and prepare the included Navigraph database on the first startup. See [Navigraph](MENUS.md/#navigraph) for more information about the integration.
+_Little Navmap_ 在首次启动时复制和处理导航地图数据。 查看 [导航](MENUS.md/#navigraph) 以获取更多关于集成的信息。
 
 The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will be shown once the preparation is finished. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_'s internal database.
 

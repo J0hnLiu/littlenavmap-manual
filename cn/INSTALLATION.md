@@ -2,7 +2,7 @@
 
 `高亮文本` 表示窗口，菜单，按钮，文件或目录名。
 
-Windows 版*Little Navmap* 是一个32位应用程序，在Windows 7, Windows 8, Windows 10 \(32-bit 及 64-bit\)下测试通过。
+Windows 版*Little Navmap* 是一个32位应用程序，在Windows 7, Windows 8, Windows 10 \(32位 及 64位\)下测试通过。
 
 macOS 及 Linux 版都是64位的，分别在macOS Sierra 及 Ubuntu Linux下测试通过。
 
@@ -14,73 +14,81 @@ macOS 及 Linux 版都是64位的，分别在macOS Sierra 及 Ubuntu Linux下测
 ### Windows
 _Little Navmap_的安装过程并不会创建任何\(Windows\)注册表项目，并只是简单的复制文件，因此不需要安装程序或设置程序。
 
-Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since this requires administrative privileges. Windows keeps control of these folders, therefore other problems might occur like replaced or deleted files.
+请勿将压缩包解压到`c:\Program Files\` 或者 `c:\Program Files (x86)\`，因为这样会需要管理权限。Windows系统保持对这些文件夹的控制，因此可能会出现其他问题，如被替换或删除文件。
 
-Extract the Zip archive into a folder like `c:\Users\YOURNAME\Documents\Little Navmap`, `c:\Users\YOURNAME\Programs\Little Navmap` or `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`.
+解压ZIP压缩包到例如`文档\Little Navmap`，或者`d:\Little Navmap`。然后双击`littlenavmap.exe`来启动此程序。取决于具体设置，有时候.exe的扩展名将会在资源管理器里隐藏。那样的话， 在资源管理器里找浅蓝色地球图标的`littlenavmap` 。
 
-**See [First Start](INTRO.md#first-start) for more information on the first start after installation.**
+**查看 [首次启动](INTRO.md#first-start) 以获取安装后第一次启动的更多信息**
 
-In some cases you have to install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784).
+**See [First Start](INTRO.md#first-start) for more information on
 
-**Install the Visual C++ Redistributable Package if you get a warning about the SSL subsystem not being initialized.
-The program will not be able to use encrypted network connections \(i.e. HTTPS\) that are needed to check for updates or
-to load online maps.**
+某些情况下您需要安装[Visual C++ 2013 运行库](https://www.microsoft.com/zh-cn/download/details.aspx?id=40784)。
 
-**Install both 32 and 64 bit versions.**
+**如您看到了SSL子系统未初始化的警告您需要安装Visual C++运行库。
+否则此程序无法使用加密网络连接（例如HTTPS），这是在线检查更新或者载入在线地图所必须的。
 
-Usually this is already installed since many other programs require it.
+**32位和64位版本都需要安装。**
 
-You also have to install the redistributable if you get an error like `Error while checking for updates ... Error creating SSL context`.
+通常这已经安装，因为许多其他程序也需要它。
 
-_Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 \(32-bit and 64-bit\). Windows XP is not supported.
+如果遇到如下错误，您也需要安装此运行库：
 
-You can find redistributable packages for all versions here: [The latest supported Visual C++ downloads](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
+`检查更新时出错。。。创建SSL上下文时出错。`
 
-#### Other Simulators than FSX SP2 {#other-simulators-than-fsx-sp2}
+_Little Navmap_ 是一个32位应用程序，在Windows 7, Windows 8, Windows 10 \(32位 及 64位\)下测试通过。Windows XP 不受支持。
 
-This program was compiled using plain FSX SP2 \(no Acceleration\) SimConnect version 10.0.61259.0.
+您可以在这里找到所有[最新支持的 Visual C++ 运行库](https://support.microsoft.com/z-hcn/help/2977003/the-latest-supported-visual-c-downloads).
 
-You might have to install an older version of SimConnect if you use _Prepar3D_ or _FSX Steam Edition_. If not sure about this simply try _Little Navmap_ out. If it fails with an error message follow the instructions below:
+#### 除 FSX SP2 外的其他模拟器{#other-simulators-than-fsx-sp2}
 
-_**Prepar3D**_: In the same directory as `Prepar3D.exe` is a `redist\Interface` directory \(normally `C:\Program Files (x86)\Lockheed Martin\Prepar3D v4\redist\Interface`\). There are multiple legacy versions of SimConnect available. You have to install `FSX-SP2-XPACK.msi` for _Little Navmap_.
+此程序在原版 FSX SP2 \(no Acceleration\) SimConnect 版本 10.0.61259.0下编译。
 
-_**FSX Steam Edition**_: The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
+如您使用_Prepar3D_ 或 _FSX Steam 版_ 您可能需要安装旧版本的SimConnect。
+如您不确定，可以简单的尝试运行_Little Navmap_。如运行失败且有错误信息，尝试如下操作：
 
-#### Improve Start-up Time {#improve-start-up-time}
+_**Prepar3D**_: `Prepar3D.exe` 的同一个目录里有 `redist\Interface` 目录 \(通常是 `C:\Program Files (x86)\Lockheed Martin\Prepar3D v4\redist\Interface`\). 这里有很多个您可能需要安装的旧版本的SimConnect. 为 _Little Navmap_安装 `FSX-SP2-XPACK.msi` .
 
-Anti-virus program can significantly slow down the startup and execution of the program in Windows.
+_**FSX Steam 版**_: 在 `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` 目录下您可以找到旧版本的SimConnect。
+
+#### 优化启动时间 {#improve-start-up-time}
+
+杀毒软件会明显拖慢此程序在Windows你的启动和运行速度。
+
+因此，建议在杀毒软件里排除以下目录：
+
 
 Therefore, it is recommended to exclude the following directories from scanning:
 
-* Disk cache for map tiles: `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
-* Scenery library and userdata databases`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
+* 地图块磁盘缓存 `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
+* 地景及用户数据库 `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
 
-These directories to not contain executable files and are accessed frequently by _Little Navmap_.
+这些目录不包含可执行程序并且经常被 _Little Navmap_范围。
 
 ### macOS
 
-Extract the ZIP file and copy the `Little Navmap` application to the folder `Applications` or any other folder.
+解压并复制 `Little Navmap` 应用到 `程序` 或其他文件夹。
 
 ### Linux
 
-Extract the tar archive to any place and run the executable `littlenavmap` to start the program from a terminal:
+解压tar文件到任意位置，并在终端（terminal）执行`littlenavmap`以启动此程序
 
 `./littlenavmap`
 
-Most file managers will start the program if double-clicked.
+大部分文件管理器会在双击后启动此程序。
+
 
 ### X-Plane
 
-*Little Navmap* **can only connect to X-Plane using the *Little Xpconnect* X-Plane plugin which has to be installed as well.**
+*Little Navmap* **只能用需要单独安装的*Little Xpconnect* X-Plane 插件链接到X-Plane。**
 
-The *Little Xpconnect* plugin is included in the *Little Navmap* archive but can also be downloaded separately. See the included `README.txt` in the `Little Xpconnect` directory for installation instructions.
+*Little Xpconnect* 插件包含在*Little Navmap* 压缩包里，也可以单独下载。查看在`Little Xpconnect`目录里的`README.txt`以获取安装说明。
 
-The plugin 64-bit only and is available for Windows, macOS and Linux.
+这个插件是仅64位的，在Windows, macOS 及 Linux下可用。
 
-### Additional Programs
+### 附加程序
 
-The downloaded *Little Navmap* archive contains two additional directories \(or applications for macOS\):
+下载的 *Little Navmap* 压缩包里有两个附加目录\(或者macOS里是两个程序\):
 
-`Little Navconnect`: A complete copy of the program allowing remote flight simulator connections for FSX, P3D and X-Plane.
+`Little Navconnect`: 一份完整的程序，可以连接到远程FSX, P3D 及 X-Plane模拟器。
 
-`Little Xpconnect`: This is the 64-bit plugin that is needed for *Little Navmap* or *Little Navconnect* to connect to X-Plane.
+`Little Xpconnect`: 这是*Little Navmap* 或 *Little Navconnect* 远程连接到X-Plane时需要用的64位插件。
