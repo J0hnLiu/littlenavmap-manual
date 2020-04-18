@@ -15,7 +15,7 @@ _Little Navmap_ 是一个免费、开源的软件，包含飞行计划，导航�
 ---
 
 Copyright 2015-2018 Alexander Barthel
-版权所有 2020 [John Liu](https://johnliu.info/lnp)
+中文翻译版权所有 2020 [John Liu](https://johnliu.info/lnp)
 
 ---
 
