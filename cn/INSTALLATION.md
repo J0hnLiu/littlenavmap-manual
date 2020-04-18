@@ -1,18 +1,18 @@
-## Installation {#installation}
+## 安装 {#installation}
 
-`Highlighted text` is used to denote window, menu, button, file or directory names.
+`高亮文本` 表示窗口，菜单，按钮，文件或目录名。
 
-*Little Navmap* for Windows is a 32-bit application and was tested with Windows 7, Windows 8, Windows 10 \(32-bit and 64-bit\).
+Windows 版*Little Navmap* 是一个32位应用程序，在Windows 7, Windows 8, Windows 10 \(32-bit 及 64-bit\)下测试通过。
 
-The macOS and Linux versions are both 64-bit and were tested with macOS Sierra and Ubuntu Linux.
+macOS 及 Linux 版都是64位的，分别在macOS Sierra 及 Ubuntu Linux下测试通过。
 
-### Updating {#installation-updating}
-Delete all installed files of a previous _Little Navmap_ version before installing a new version. All files from the previous ZIP archive can be deleted since settings are stored in separate directories \(except [custom map themes](MAPTHEMES.md)\). In any case do not merge the installation directories.
+### 更新 {#installation-updating}
+在安装_Little Navmap_的新版本前删除所有旧版本的文件。由于设置存储在不同的目录中，因此可以删除以前ZIP存档中的所有文件 \(除了 [自定义地图主题](MAPTHEMES.md)\)。任何情况下都不要覆盖安装。
 
-There is no need to delete the old settings directory. The program is written in a way that it can always work with old setting files.
+不需要删除旧的设置目录。程序是以总是可以处理旧的设置文件方式编程的。
 
 ### Windows
-The installation of _Little Navmap_ does not change any registry entries \(in Windows\) and involves a simple copy of files therefore an installer or setup program is not required.
+_Little Navmap_的安装过程并不会创建任何\(Windows\)注册表项目，并只是简单的复制文件，因此不需要安装程序或设置程序。
 
 Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since this requires administrative privileges. Windows keeps control of these folders, therefore other problems might occur like replaced or deleted files.
 

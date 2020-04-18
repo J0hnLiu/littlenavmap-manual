@@ -1,6 +1,6 @@
-## Menus and Toolbars {#menus-and-toolbars}
+## 菜单及工具栏 {#menus-and-toolbars}
 
-This chapter describes all the menu items of _Little Navmap_. You will find most of this functionality on the toolbars as well which are not be described separately. Key combinations can be seen on the menu items and are not listed in this manual.
+本章介绍_Little Navmap_的所有菜单项。您也可以在工具栏上找到这些功能的大部分，这些功能并不是单独描述的。在菜单项上可以看到本手册中没有列出快捷键。
 
 ![Little Navmap Menu and Toolbars](../images/menutoolbar.jpg "Little Navmap Menu and Toolbars")
 
