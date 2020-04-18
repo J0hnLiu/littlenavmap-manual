@@ -2,11 +2,11 @@
 
 _Little Navmap_ 在首次启动时复制和处理导航地图数据。 查看 [导航](MENUS.md/#navigraph) 以获取更多关于集成的信息。
 
-The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will be shown once the preparation is finished. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_'s internal database.
+准备完成后，[地景库对话框](SCENERY.md#load-scenery-library-dialog) 将会显示。您可以选择所有可识别的飞行模拟器地景并将它们载入到_Little Navmap_的内部数据库。
 
-**Note that X-Plane cannot be recognized automatically. You have to set the path in the `Scenery Library Dialog` before you can load the database or selecting it in the menu.**
+**注意X-Plane不能自动识别。在您可以载入货从目录里选择前，您必须手动在`地景库对话框`里设置它的路径。
 
-One database is kept for each simulator and can be changed on the fly in the [Scenery Library Menu](MENUS.md#scenery-library-menu).
+每个模拟器都有一个单独的数据库，可以在飞行过程中在[地景库目录](MENUS.md#scenery-library-menu)里更改。
 
 A warning dialog will be shown on Windows when starting _Little Navmap_ the first time on a system without FSX or P3D flight simulator installations. See chapter [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on this.
 
