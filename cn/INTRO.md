@@ -4,96 +4,94 @@ _Little Navmap_ 在首次启动时复制和处理导航地图数据。 查看 [�
 
 准备完成后，[地景库对话框](SCENERY.md#load-scenery-library-dialog) 将会显示。您可以选择所有可识别的飞行模拟器地景并将它们载入到_Little Navmap_的内部数据库。
 
-**注意X-Plane不能自动识别。在您可以载入货从目录里选择前，您必须手动在`地景库对话框`里设置它的路径。
+**注意X-Plane不能自动识别。在您可以载入或从目录里选择前，您必须手动在`地景库对话框`里设置它的路径。
 
 每个模拟器都有一个单独的数据库，可以在飞行过程中在[地景库目录](MENUS.md#scenery-library-menu)里更改。
 
-A warning dialog will be shown on Windows when starting _Little Navmap_ the first time on a system without FSX or P3D flight simulator installations. See chapter [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on this.
+如您的Windows系统里没有FSX或者P3D飞行模拟器，首次启动时将显示一个警告对话框。查看章节 [在没有安装飞行模拟器的情况下运行](RUNNOSIM.md#running-without-flight-simulator-installation) 以获得更多关于此的信息。
 
-You can also go directly to the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) from there if you have X-Plane installed.
+如您安装了X-Plane，您也可以直接从那里打开[地景库对话框](SCENERY.md#load-scenery-library-dialog)。
 
-One or more scenery library databases may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) after erasing the databases.
+如您更新了_Little Navmap_，一个或多个地景数据库可能需要更新。一个询问对话框将会打开提示您抹掉不兼容数据库。您可以抹掉数据库后在[地景库对话框](SCENERY.md#load-scenery-library-dialog)里重新载入地景。
 
-## Recommended things to do after Installing {#things-to-do-after-installing}
+## 安装后建议工作 {#things-to-do-after-installing}
 
-* The elevation data which is used by default is limited and has a lot of problems. Therefore, I recommend to download and use the offline GLOBE elevation data. See [Options Dialog / Flight Plan Elevation Profile](OPTIONS.md#cache-elevation) for more information.
-* Have a look at the [tutorials](TUTORIALS.md) if you use the program the first time.
-* See [Install Navigraph Updates](https://albar965.github.io/littlenavmap_navigraph.html) on my home page for information how to update _Little Navmap_'s navigation data.
-* See [Connecting to a Flight Simulator](CONNECT.md) for the next step to use *Little Navmap* as a moving map. The included *Little Xpconnect* plugin has to be installed for X-Plane.
+* 默认使用的立面数据库是有限制的并且有很多问题。因此我建议下载并使用离线的GLOBE立面数据。查看 [选项对话框 / 飞行计划立面图](OPTIONS.md#cache-elevation) 以获得更多信息。
+* 如您第一次使用此程序，看看 [教程](TUTORIALS.md)。
+* 在我的主页查看 [安装 Navigraph 更新](https://albar965.github.io/littlenavmap_navigraph.html) 以获得关于更新 _Little Navmap_ 的导航数据库的信息。
+* 查看 [连接到飞行模拟器](CONNECT.md) 以在下一步将 *Little Navmap* 用做实时地图。 这包括 X-Plane 需要使用的*Little Xpconnect*插件。
 
-## How to run a network Setup {#network-setup}
+## 如何运行一个网络安装 {#network-setup}
 
-See the two chapters below if you like to run _Little Navmap_ in a networked setup using one computer for the flight simulator and one computer to run _Little Navmap_.
+如果您想在网络环境下安装_Little Navmap_，用一台计算机作为飞行模拟器，用另一台计算机来运行_Little Navmap_，请参阅下面的两章。
 
-* [Connecting to a Flight Simulator](CONNECT.md)
-* [Running without Flight Simulator Installation](RUNNOSIM.md)
+* [连接到飞行模拟器](CONNECT.md)
+* [在没有安装飞行模拟器的情况下运行](RUNNOSIM.md)
 
-**How to prepare a network setup:**
+**如何准备网络安装：**
+1. 在飞行计算机**及**网络计算机上安装/解压整个 *Little Navmap* 压缩包。
+1. 如您使用X-Plane，复制*Little Xpconnect* 到X-Plane插件文件夹。
+2. 在飞行计算机使用 *Little Navmap* 来生成地景数据库。主菜单 -&gt; `地景库` -&gt; `载入地景库 ...`
+3. 将数据库文件复制到网络计算机。复制前退出*Little Navmap*。
 
-1. Install/extract the whole *Little Navmap* archive on the flying **and** network computer.
-1. Copy *Little Xpconnect* to the X-Plane plugins folder if you use X-Plane.
-2. Use *Little Navmap* to generate the scenery database on the flying computer. Main menu -&gt; `Scenery Library` -&gt; `Load Scenery Library ...`
-3. Copy the database files to the network computer. Quit *Little Navmap* before copying.
+**在网络安装下飞行**
 
-**Flying in a network setup:**
+1. 启动模拟器
+2. 在飞行计算机上启动 *Little Navconnect*。
+3. 在网络计算机上启动 *Little Navmap*。
+4. 在网络计算机上将 *Little Navmap* 连接到飞行计算机上的 *Little Navconnect* 。 主菜单 -&gt; `工具` -&gt; `飞行模拟器连接 ...`
 
-1. Start the simulator
-2. Start *Little Navconnect* on the flying computer.
-3. Run *Little Navmap* on the network computer.
-4. Connect *Little Navmap* on the network computer to *Little Navconnect* on the flying computer. Main menu -&gt; `Tools` -&gt; `Flight Simulator Connection ...`
+查看上述链接以获取更详细说明。
 
-See links above for detailed instructions.
+## 通用 {#general-remarks}
 
-## General {#general-remarks}
+### 用户界面 {#user-interface}
 
-### User Interface {#user-interface}
+#### 停靠窗口
 
-#### Dock Windows
+_Little Navmap_的用户界面包括一个主窗口，和若干可以分离或者在主窗口里任意排序的停靠窗口。
+停靠窗口可以在他们的停靠位置到处移动，也可以很简单的把它们拖到主窗口外来从主窗口里分离，也可以双击它们的标题栏或者点击右上方的窗口符号来分离。
 
-The user interface of _Little Navmap_ consists of a main window and several dock windows which can be detached from the main window or arranged in any order within the main window.
+双击停靠窗口的标题栏或者再次点击窗口符号来将窗口移回它们的停靠位置。
 
-The docked windows can be moved around in their docked position and can be detached from the main window by simply dragging them outside of the main window, by double-clicking their title bar or by clicking on the window symbol on the top right.
+如不需要，除地图窗口外的所有停靠窗口都可以关闭。您甚至可以把停靠窗口拖到彼此位置来创建一个选项页式的视图。这种情况下页名将会显示在停靠窗口堆栈的下方。
 
-Double click on the docked window's title bar or click on the window symbol again to move the windows back into their docked position.
+**点击窗口标题栏时按住 **`Ctrl`** 键可以阻止窗口停靠并保持浮动。**
 
-All docked windows except the map window can be closed if they are not needed. You can even drop docked windows on each other to create a tabbed view. The tabs will appear at the bottom of the dock stack in this case.
+工具栏可以通过点击左边的操纵柄来移动，也可以关闭或者从主窗口分离。
 
-**Hold **`Ctrl`** while clicking on the window titlebar to prevent a window from going into docked state and keep it floating.**
+**使用 **`主菜单` -&gt; `窗口` **菜单来恢复关闭的窗口或工具栏。.**
 
-Toolbars are also movable by clicking on the left handle and can also be closed or detached from the main window.
+**使用 **`主菜单` -&gt; `窗口`  -&gt; `重设窗口布局`** 目录项可以用来重设所有停靠窗口和工具栏的状态及位置到默认值。**
 
-**Use the **`Main Menu` -&gt; `Window` **menu to restore closed windows or toolbars.**
+#### 上下文菜单
 
-**The **`Main Menu` -&gt; `Window` -&gt; `Reset Window Layout`** menu item can be used to reset the state and positions of all dock windows and toolbars back to their default.**
+**使用上下文菜单来构建一个飞行计划**
 
-#### Context Menus
+以下位置可以找到上下文菜单
 
-**Use the context menus to build a flight plan.**
+* 地图显示窗口 - [地图上下文菜单](MAPDISPLAY.md#map-context-menu)
+* 飞行计划表 - [飞行计划表上下文菜单](FLIGHTPLAN.md#flight-plan-table-view-context-menu)
+* 机场及助航设备搜索结果表 - [搜索结果表上下文菜单](SEARCH.md#search-result-table-view-context-menu)
+* 程序搜索树 - [程序树上下文菜单](SEARCHPROCS.md#procedure-context-menu)
 
-Context menus can be found in the following places:
+上下文菜单可以提供关于点击处对象的更多信息，或者用以构建或编辑飞行计划。
 
-* Map display window - [Map Context Menu](MAPDISPLAY.md#map-context-menu)
-* Flight plan table - [Flight Plan Table View Context Menu](FLIGHTPLAN.md#flight-plan-table-view-context-menu)
-* Airport and navaid search result tables - [Search Result Table View Context Menu](SEARCH.md#search-result-table-view-context-menu)
-* Procedure search tree - [Procedure Tree Context Menu](SEARCHPROCS.md#procedure-context-menu)
+#### 工具栏提示帮助，帮助按钮和帮助目录 {#help}
 
-The context menus provide functionality to get more information about an object at the clicked position or to build or edit a flight plan.
+*Little Navmap*的帮助目录包含在线帮助，附带的离线PDF帮助文件，在线教程和地图图例。
 
-#### Tooltip Help, Help Buttons and Help Menu {#help}
+此程序也在按钮及其他控件上是用工具栏提示来显示更多信息。
 
-The help menu of *Little Navmap* contains links to the online help, an included offline help PDF document, online tutorials and the map legend.
+如您悬停鼠标在一个目录项上，更详细的描述将会在状态栏左侧显示。
 
-The program uses tooltips to display more information on buttons and other controls.
+大部分的对话框和部分停靠窗口将显示帮助按钮 ![帮助](../images/icons/help.png "帮助")，点击将会打开在线帮助的对应章节。
 
-A more detailed description is shown on the left side of the statusbar if you hover the mouse over a menu item.
+#### 窗口标题
 
-Most dialogs and some dock windows show help buttons ![Help](../images/icons/help.png "Help") which will open the corresponding sections of the online manual.
+主窗口标题会显示当前选中的模拟器数据库 \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` 或 `XP11`\)，飞行计划文件名及紧跟的`*` 如飞行计划已更改。
 
-#### Window Title
-
-The main window title indicates the currently selected simulator database \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` or `XP11`\), the flight plan file name and a trailing `*` if the flight plan has been changed.
-
-A `N` will be appended if the Navigraph database is used:
+如已使用Navigraph数据库，`N`将会附加在后面。
 
 * `P3DV4`: All feartures on the map and all information in dialogs and windows comes from the flight simulator database.
 * `P3DV4 / N`: Airports and ILS are shown and used from the flight simulator database. Navaids, airspace, airways and procedures are used from the Navigraph database.

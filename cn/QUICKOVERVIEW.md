@@ -1,14 +1,13 @@
 ## Quick Overview {#quick-overview}
 
-![Little Navmap Overview](../images/overview.jpg "Little Navmap Overview")
+![Little Navmap 概述](../images/overview.jpg "Little Navmap Overview")
 
-_**Picture above:** A quick overview of _Little Navmap_ showing the most important functions._
+**上述图片:** _Little Navmap_的概述图片，显示了最重要的功能。
 
-![Little Navmap Context Menus](../images/contextmenus.jpg "Little Navmap Context Menus")
+![Little Navmap 上下文菜单](../images/contextmenus.jpg "Little Navmap 上下文菜单")
 
-_**Picture above:** The most important context menus which are can be used to
-build a flight plan, navigate the map or show information._
+_**上述图片:** 用以创建飞行计划、在地图上导航或显示信息的最重要的上下文菜单。
 
-![Little Navmap Help](../images/help.jpg "Little Navmap Help")
+![Little Navmap 帮助](../images/help.jpg "Little Navmap 帮助")
 
-_**Picture above:** Where to get help and more information. Tooltips, status bar and help buttons marked red._
+_**上述图片:** 获得帮助及更多信息的位置。工具栏提示、状态栏及帮助按钮以红色框标记。
